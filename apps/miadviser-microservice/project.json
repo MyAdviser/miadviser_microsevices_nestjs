@@ -1,0 +1,24 @@
+{
+  "name": "miadviser-microservice",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/miadviser-microservice/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "miadviser-microservice:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "miadviser-microservice:build:development"
+        },
+        "production": {
+          "buildTarget": "miadviser-microservice:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
