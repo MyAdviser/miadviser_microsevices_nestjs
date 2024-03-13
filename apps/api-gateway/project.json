@@ -1,21 +1,21 @@
 {
-  "name": "miadviser-microservice",
+  "name": "api-gateway",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/miadviser-microservice/src",
+  "sourceRoot": "apps/api-gateway/src",
   "projectType": "application",
   "targets": {
     "serve": {
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "miadviser-microservice:build"
+        "buildTarget": "api-gateway:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "miadviser-microservice:build:development"
+          "buildTarget": "api-gateway:build:development"
         },
         "production": {
-          "buildTarget": "miadviser-microservice:build:production"
+          "buildTarget": "api-gateway:build:production"
         }
       }
     }

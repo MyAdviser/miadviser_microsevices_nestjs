@@ -3,7 +3,7 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, '../../dist/apps/miadviser-microservice'),
+    path: join(__dirname, '../../dist/apps/api-gateway'),
   },
   plugins: [
     new NxWebpackPlugin({
